@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de HTML con Formularios</title>
+</head>
+
+<body>
+    <section id="formulario">
+        <h1>Formularios en HTML</h1>
+        <form action="#" method="post">
+            <h2>Datos Personales</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+            
+            <br>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" name="email" id="email" placeholder="micorreo@dominio.com">
+            
+            <br>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+
+            <br><br>
+            <fieldset>
+                <legend><b>Género</b></legend>
+                <input type="radio" id="rd_masculino" name="grupoGenero">
+                <label for="rd_masculino">Masculino</label>
+
+                <input type="radio" id="rd_femenino" name="grupoGenero">
+                <label for="rd_femenino">Femenino</label>
+
+                <input type="radio" id="rd_otro" name="grupoGenero">
+                <label for="rd_otro">Otro</label>
+            </fieldset>
+
+            <br>
+            <fieldset>
+                <legend><b>Preferencias</b></legend>
+                <input type="checkbox" id="cb_musica" name="cb_musica">
+                <label for="cb_musica">Música</label>
+                <br>
+                <input type="checkbox" id="cb_deportes" name="cb_deportes">
+                <label for="cb_deportes">Deportes</label>
+                <br>
+                <input type="checkbox" id="cb_lectura" name="cb_lectura">
+                <label for="cb_lectura">Lectura</label>
+
+            </fieldset>
+
+           <br>
+            <h2>Comentarios</h2>
+            <textarea cols="50" rows="5" name="comentarios"></textarea>
+            
+            <br><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+</body>
+
+</html>
